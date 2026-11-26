@@ -96,6 +96,9 @@ nav .nav-contact:hover { background: var(--white); color: var(--black); text-dec
 .product-copy .availability { font-size: .87rem; margin-block: 14px 20px; font-weight: 600; }
 .product-visual { display: grid; place-items: center; background: #e4e4e0; min-width: 0; padding: clamp(18px, 3vw, 38px); }
 .product-visual img { width: 100%; }
+/* Keep the WaveSites product accent isolated from Hotbrain's monochrome palette. */
+.wavesites-feature { --wavesites-green: #205c47; }
+.wavesites-feature .text-link { color: var(--wavesites-green); }
 .hosting-figure { background: #ededeb; border: 1px solid var(--rule); }
 .hosting-figure img { width: 100%; }
 .contact { background: var(--paper); border-top: 1px solid var(--rule); position: relative; padding-block: clamp(55px, 8vw, 95px); }

@@ -13,3 +13,12 @@ The lettering is rendered artwork, not a bundled font. The Wave source identifie
 the lettering as Manrope by The Manrope Project Authors, licensed under the
 SIL Open Font License 1.1; that license does not apply to documents created using
 the font.
+
+
+`wordmark-green.svg` is a local color-only adaptation of the same transparent
+PNG, using its original alpha channel to preserve the filled Wave lettering,
+outlined Sites lettering and wave mark exactly. The forest green (#205c47)
+is the Wave theme's `--brand` token in `src/styles/site.css` of the
+[drewclifton/wave repository](https://github.com/drewclifton/wave/blob/main/src/styles/site.css).
+The source PNG remains unchanged. The SVG is self-contained and requires no
+external fonts, media or script.
