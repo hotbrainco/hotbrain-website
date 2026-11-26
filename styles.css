@@ -19,20 +19,26 @@ a:hover { text-decoration-thickness: 2px; }
 .skip-link:focus { transform: none; }
 .site-header { background: var(--black); color: var(--white); border-bottom: 1px solid var(--dark-rule); }
 .site-header a:focus-visible { outline-color: var(--white); }
-.header-inner { display: flex; align-items: center; justify-content: space-between; gap: 32px; min-height: 92px; padding-block: 16px; }
+.header-inner { display: flex; align-items: center; justify-content: space-between; gap: 32px; min-height: 76px; padding-block: 12px; }
 .brand { display: inline-block; flex-shrink: 0; width: 170px; }
 .site-header .brand img, .site-footer .brand img { filter: grayscale(1); }
 nav { display: flex; align-items: center; justify-content: flex-end; flex-wrap: wrap; gap: clamp(18px, 3vw, 42px); }
-nav a { font-size: .88rem; font-weight: 600; text-decoration: none; padding-block: 9px; white-space: nowrap; }
-nav a:hover { text-decoration: underline; text-underline-offset: 5px; }
-nav .nav-contact { display: inline-flex; align-items: center; gap: 16px; border: 1px solid var(--white); padding: 9px 16px; }
-nav .nav-contact:hover { background: var(--white); color: var(--black); text-decoration: none; }
+nav a { font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; font-size: .9rem; font-weight: 500; letter-spacing: -.015em; line-height: 1.35; text-decoration: none; padding-block: 12px; white-space: nowrap; transition: color .16s ease; }
+nav a:hover { color: #b9b9b9; text-decoration: none; }
+nav .nav-contact { display: inline-flex; align-items: center; gap: 12px; border: 1px solid #777; padding: 11px 16px; transition: color .16s ease, border-color .16s ease; }
+.contact-dot { display: inline-block; width: 10px; height: 10px; flex: 0 0 10px; border-radius: 50%; background: #4e95ff; transition: background-color .16s ease; }
+nav .nav-contact:hover, nav .nav-contact:focus-visible { color: #fff; border-color: #fff; text-decoration: none; }
+.nav-contact:hover .contact-dot, .nav-contact:focus-visible .contact-dot { background-color: #fff; }
+@media (prefers-reduced-motion: reduce) {
+  nav a, nav .nav-contact, .contact-dot { transition: none; }
+}
 .hero { background: var(--paper); padding-top: clamp(42px, 7vw, 92px); }
 .hero-grid { display: grid; grid-template-columns: minmax(0, 1.16fr) minmax(0, .84fr); gap: clamp(32px, 5vw, 84px); align-items: center; }
 .hero-copy { padding-block: 22px; }
 .eyebrow { font-size: .75rem; font-weight: 700; letter-spacing: .115em; line-height: 1.5; text-transform: uppercase; }
 .hero h1 { margin: 23px 0; font-size: clamp(3.1rem, 6.4vw, 6.3rem); line-height: .99; font-weight: 700; letter-spacing: var(--display); }
-.hero-lead { color: var(--muted); font-size: clamp(1.06rem, 1.65vw, 1.34rem); max-width: 34rem; }
+.hero-lead, .section .lead, .contact p:not(.eyebrow) { font-size: clamp(1rem, 1.35vw, 1.125rem); line-height: 1.42; letter-spacing: -.012em; }
+.hero-lead { color: var(--muted); max-width: 34rem; }
 .actions { display: flex; flex-wrap: wrap; gap: 18px 28px; align-items: center; margin-top: 30px; }
 .button { display: inline-flex; align-items: center; justify-content: space-between; gap: 36px; min-height: 50px; padding: 13px 22px; border: 1px solid; text-decoration: none; font-size: .95rem; font-weight: 600; }
 .button-dark { background: var(--black); border-color: var(--black); color: white; }
@@ -71,7 +77,7 @@ nav .nav-contact:hover { background: var(--white); color: var(--black); text-dec
 .anchor { display: block; position: absolute; top: 0; }
 .split { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, .88fr); align-items: center; gap: clamp(36px, 7vw, 108px); }
 .section h2, .contact h2 { font-size: clamp(2.35rem, 4.4vw, 4.6rem); line-height: 1.04; letter-spacing: var(--display); margin: 18px 0 23px; font-weight: 700; }
-.section .lead { color: var(--muted); font-size: clamp(1.06rem, 1.6vw, 1.23rem); max-width: 41rem; }
+.section .lead { color: var(--muted); max-width: 37rem; }
 .capabilities { border-top: 1px solid var(--rule); margin-block: 28px; }
 .capabilities > div { padding: 14px 0 15px; border-bottom: 1px solid var(--rule); }
 .capabilities dt { font-weight: 700; font-size: 1rem; }
@@ -93,7 +99,7 @@ nav .nav-contact:hover { background: var(--white); color: var(--black); text-dec
 .product-copy { padding: clamp(25px, 4.5vw, 60px); }
 .product-copy h3 { margin: 22px 0 23px; max-width: 290px; }
 .product-copy p:not(.eyebrow) { max-width: 33rem; color: #414141; }
-.product-copy .availability { font-size: .87rem; margin-block: 14px 20px; font-weight: 600; }
+.product-copy .text-link { margin-top: 22px; }
 .product-visual { display: grid; place-items: center; background: #e4e4e0; min-width: 0; padding: clamp(18px, 3vw, 38px); }
 .product-visual img { width: 100%; }
 /* Keep the WaveSites product accent isolated from Hotbrain's monochrome palette. */
@@ -104,13 +110,13 @@ nav .nav-contact:hover { background: var(--white); color: var(--black); text-dec
 .contact { background: var(--paper); border-top: 1px solid var(--rule); position: relative; padding-block: clamp(55px, 8vw, 95px); }
 .contact-grid { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, .8fr); gap: 40px; align-items: end; }
 .contact h2 { font-size: clamp(3rem, 5.5vw, 5.5rem); }
-.contact p:not(.eyebrow) { color: var(--muted); max-width: 35rem; font-size: 1.06rem; }
+.contact p:not(.eyebrow) { color: var(--muted); max-width: 35rem; }
 .contact-details { display: flex; align-items: flex-start; flex-direction: column; gap: 16px; border-left: 1px solid var(--rule); padding-left: 36px; }
 .contact .button-light { color: white; background: var(--black); border-color: var(--black); }
 .contact .button-light:hover { background: #3c3c3c; }
 .contact .button-light:focus-visible { outline-color: var(--black); }
 .email-address { font-weight: 600; font-size: 1.2rem; overflow-wrap: anywhere; }
-.contact-details p { font-size: .9rem !important; }
+.contact .contact-details p { font-size: .9rem; line-height: 1.5; letter-spacing: normal; }
 .site-footer { background: var(--black); color: white; padding-block: 42px 20px; }
 .footer-inner { display: flex; align-items: flex-start; justify-content: space-between; gap: 30px; }
 .footer-links { display: flex; flex-wrap: wrap; gap: 18px 28px; font-size: .9rem; align-items: baseline; }
@@ -136,11 +142,12 @@ nav .nav-contact:hover { background: var(--white); color: var(--black); text-dec
 }
 @media (max-width: 760px) {
   .shell { width: calc(100% - 40px); }
-  .header-inner { flex-direction: column; align-items: flex-start; gap: 9px; padding-block: 18px 12px; }
+  .header-inner { flex-direction: column; align-items: flex-start; gap: 7px; padding-block: 14px 9px; }
   .site-header .brand { width: 142px; }
   nav { justify-content: space-between; gap: 4px 12px; width: 100%; }
   nav a { font-size: .82rem; padding-block: 10px; }
-  nav .nav-contact { gap: 5px; padding: 8px 9px; }
+  nav .nav-contact { gap: 7px; padding: 9px 11px; }
+  .contact-dot { width: 9px; height: 9px; flex-basis: 9px; }
   .hero-grid, .split, .product-feature, .contact-grid { grid-template-columns: minmax(0, 1fr); }
   .hero { padding-top: 25px; }
   .hero-copy { padding-block: 10px; }
