@@ -25,10 +25,10 @@ a:hover { text-decoration-thickness: 2px; }
 nav { display: flex; align-items: center; justify-content: flex-end; flex-wrap: wrap; gap: clamp(18px, 3vw, 42px); }
 nav a { font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; font-size: .9rem; font-weight: 500; letter-spacing: -.015em; line-height: 1.35; text-decoration: none; padding-block: 12px; white-space: nowrap; transition: color .16s ease; }
 nav a:hover { color: #b9b9b9; text-decoration: none; }
-nav .nav-contact { display: inline-flex; align-items: center; gap: 12px; border: 1px solid #777; padding: 11px 16px; transition: color .16s ease, border-color .16s ease; }
-.contact-dot { display: inline-block; width: 10px; height: 10px; flex: 0 0 10px; border-radius: 50%; background: #4e95ff; transition: background-color .16s ease; }
-nav .nav-contact:hover, nav .nav-contact:focus-visible { color: #fff; border-color: #fff; text-decoration: none; }
-.nav-contact:hover .contact-dot, .nav-contact:focus-visible .contact-dot { background-color: #fff; }
+nav .nav-contact { display: inline-flex; align-items: center; gap: 12px; border: 1px solid #777; padding: 11px 16px; transition: color .16s ease; }
+.contact-dot { display: inline-block; width: 8px; height: 8px; flex: 0 0 8px; border-radius: 50%; background: #3678db; transition: background-color .16s ease; }
+nav .nav-contact:hover, nav .nav-contact:focus-visible { color: #fff; border-color: #777; text-decoration: none; }
+.nav-contact:hover .contact-dot, .nav-contact:focus-visible .contact-dot { background-color: currentColor; }
 @media (prefers-reduced-motion: reduce) {
   nav a, nav .nav-contact, .contact-dot { transition: none; }
 }
@@ -147,7 +147,7 @@ nav .nav-contact:hover, nav .nav-contact:focus-visible { color: #fff; border-col
   nav { justify-content: space-between; gap: 4px 12px; width: 100%; }
   nav a { font-size: .82rem; padding-block: 10px; }
   nav .nav-contact { gap: 7px; padding: 9px 11px; }
-  .contact-dot { width: 9px; height: 9px; flex-basis: 9px; }
+  .contact-dot { width: 7px; height: 7px; flex-basis: 7px; }
   .hero-grid, .split, .product-feature, .contact-grid { grid-template-columns: minmax(0, 1fr); }
   .hero { padding-top: 25px; }
   .hero-copy { padding-block: 10px; }
