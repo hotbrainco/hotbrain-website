@@ -33,7 +33,7 @@ a:hover { text-decoration-thickness: 2px; }
   pointer-events: none;
 }
 .site-header a:focus-visible { outline-color: var(--white); }
-.header-inner { display: flex; align-items: center; justify-content: space-between; gap: 32px; min-height: 136px; padding-block: 20px 36px; }
+.header-inner { display: flex; align-items: center; justify-content: space-between; gap: 32px; min-height: 128px; padding-block: 20px 28px; }
 .brand { display: inline-block; flex-shrink: 0; width: 170px; }
 .site-header .brand { width: 194px; }
 .site-header .brand img, .site-footer .brand img { filter: grayscale(1); }
@@ -157,7 +157,7 @@ nav .nav-contact:hover, nav .nav-contact:focus-visible { color: #fff; border-col
 }
 @media (max-width: 760px) {
   .shell { width: calc(100% - 40px); }
-  .header-inner { flex-direction: column; align-items: flex-start; gap: 10px; padding-block: 22px 29px; }
+  .header-inner { flex-direction: column; align-items: flex-start; gap: 10px; padding-block: 22px 23px; }
   .site-header .brand { width: 160px; }
   nav { justify-content: space-between; gap: 4px 12px; width: 100%; }
   nav a { font-size: .9rem; padding-block: 10px; }
