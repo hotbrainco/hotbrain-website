@@ -1,595 +1,163 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hotbrain - Hosting, web development, SaaS, and technical strategy</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="icon" type="image/png" href="assets/images/favicon.png">
-    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hotbrain — Technology consulting, product development &amp; managed hosting</title>
+  <meta name="description" content="Hotbrain is an independent technology consultancy and product studio. We provide technical leadership, web development and managed cloud hosting, and build our own software products.">
+  <link rel="canonical" href="https://hotbrain.co/">
+  <link rel="icon" type="image/svg+xml" href="assets/images/editorial/favicon.svg">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <nav>
-                <div class="logo">
-                    <img src="assets/images/logo.png" alt="Hotbrain">
-                </div>
-                <div class="menu">
-                    <a href="#vision">Approach</a>
-                    <a href="#consulting">Services</a>
-                    <a href="#labs">SaaS &amp; R&amp;D</a>
-                    <a href="#infrastructure">Hosting</a>
-                    <a href="#contact">Contact</a>
-                    <button class="close-menu" aria-label="Close menu">
-                        <i data-lucide="x"></i>
-                    </button>
-                </div>
-                <button class="mobile-toggle" aria-label="Menu">
-                    <i data-lucide="menu"></i>
-                </button>
-            </nav>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header" id="top">
+    <div class="shell header-inner">
+      <a class="brand" href="#top" aria-label="Hotbrain home"><img src="assets/images/logo.png" width="2000" height="461" alt="Hotbrain"></a>
+      <nav aria-label="Main navigation">
+        <a href="#consulting">Consulting</a>
+        <a href="#labs">Products &amp; R&amp;D</a>
+        <a href="#infrastructure">Hosting</a>
+        <a class="nav-contact" href="#contact">Contact <span aria-hidden="true">↗</span></a>
+      </nav>
+    </div>
+  </header>
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="shell hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Independent technology company</p>
+          <h1 id="hero-title">Clear thinking.<br>Better technology.</h1>
+          <p class="hero-lead">We help organizations make sound technology decisions, build useful digital systems and keep them running. We also develop software products of our own.</p>
+          <div class="actions">
+            <a class="button button-dark" href="#contact">Talk to us <span aria-hidden="true">↗</span></a>
+            <a class="text-link" href="#consulting">Explore our work <span aria-hidden="true">↓</span></a>
+          </div>
         </div>
-    </header>
-
-    <div class="menu-overlay"></div>
-
-    <section class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <h1 class="text-reveal">Technical delivery for teams that need real execution</h1>
-                <p class="subtitle text-reveal-delay">Managed cloud hosting, web development, SaaS products, and strategic technical support.</p>
-                <div class="cta-buttons">
-                    <a href="#consulting" class="btn btn-primary">View services</a>
-                    <a href="#contact" class="btn btn-secondary">Talk to us</a>
-                </div>
-            </div>
-        </div>
-        <div class="hero-backdrop"></div>
-        <div class="hero-shapes">
-            <div class="shape shape-1"></div>
-            <div class="shape shape-2"></div>
-            <div class="shape shape-3"></div>
-        </div>
-        <div class="scroll-indicator">
-            <a href="#vision">
-                <i data-lucide="chevrons-down"></i>
-            </a>
-        </div>
+        <figure class="hero-figure" aria-hidden="true">
+          <img src="assets/images/editorial/field.svg" width="720" height="720" alt="">
+          <figcaption><span>HOTBRAIN / 01</span><span>STRATEGY · SYSTEMS · SOFTWARE</span></figcaption>
+        </figure>
+      </div>
+      <div class="shell hero-index" aria-label="Our three areas of work">
+        <a href="#consulting"><span class="index-number">01</span> Technology consulting <span aria-hidden="true">↘</span></a>
+        <a href="#labs"><span class="index-number">02</span> Products &amp; R&amp;D <span aria-hidden="true">↘</span></a>
+        <a href="#infrastructure"><span class="index-number">03</span> Managed cloud hosting <span aria-hidden="true">↘</span></a>
+      </div>
     </section>
 
-    <section id="vision" class="full-width-image vision-section">
-        <div class="image-wrapper">
-            <img src="assets/images/stock/7.jpg" alt="Our Vision">
-            <div class="image-overlay">
-                <div class="container">
-                    <div class="overlay-content">
-                        <span class="overline">How we work</span>
-                        <h2>Practical technical leadership for growing organizations</h2>
-                        <p>We help teams ship better websites and products, modernize infrastructure, and make smart technology decisions without adding full-time overhead.</p>
-                        <a href="#impact" class="section-link">
-                            <span>What we deliver</span>
-                            <i data-lucide="arrow-down"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
+    <section class="section consulting" id="consulting" aria-labelledby="consulting-title">
+      <span class="anchor" id="vision"></span><span class="anchor" id="impact"></span>
+      <div class="shell split">
+        <div class="section-copy">
+          <p class="eyebrow"><span class="section-number">01 /</span> Technology consulting</p>
+          <h2 id="consulting-title">Expertise to move your organization forward.</h2>
+          <p class="lead">From deciding what to build to getting it into production, we bring practical technical leadership and hands-on delivery to your team.</p>
+          <dl class="capabilities">
+            <div><dt>Strategy &amp; fractional leadership</dt><dd>Technical planning, audits, prioritization, vendor alignment and ongoing leadership without a full-time hire.</dd></div>
+            <div><dt>Web development &amp; integrations</dt><dd>Websites, content platforms, HubSpot implementations and connected digital systems.</dd></div>
+            <div><dt>Modernization &amp; technical delivery</dt><dd>Improve existing systems, make informed architecture decisions and turn plans into working software.</dd></div>
+          </dl>
+          <a class="text-link" href="#contact">Discuss a consulting engagement <span aria-hidden="true">↗</span></a>
         </div>
+        <figure class="photo">
+          <img src="assets/images/stock/3.jpg" alt="A person mapping ideas on a glass whiteboard" width="1408" height="1056" loading="lazy" decoding="async">
+        </figure>
+      </div>
     </section>
 
-    <section id="impact" class="impact-statement">
-        <div class="container">
-            <div class="impact-content">
-                <h2 class="gradient-text scroll-scale visible">Services organized by what you need next</h2>
-                <p class="section-intro">Instead of one catch-all list, we group our work into focused categories so you can quickly find the right fit for your current stage.</p>
-                <div class="impact-pillars">
-                    <article class="pillar-card animate-in">
-                        <h3>Run and host</h3>
-                        <p>Stabilize and operate your public-facing platform with confidence.</p>
-                        <ul class="pillar-list">
-                            <li>Managed cloud hosting</li>
-                            <li>Maintenance, security, and support</li>
-                        </ul>
-                    </article>
-                    <article class="pillar-card animate-in">
-                        <h3>Build and product</h3>
-                        <p>Deliver websites, SaaS functionality, and experiments that produce measurable outcomes.</p>
-                        <ul class="pillar-list">
-                            <li>Web development and integrations</li>
-                            <li>SaaS product development and applied R&amp;D</li>
-                        </ul>
-                    </article>
-                    <article class="pillar-card animate-in">
-                        <h3>Lead and plan</h3>
-                        <p>Add experienced technical guidance without adding full-time executive overhead.</p>
-                        <ul class="pillar-list">
-                            <li>Fractional tech management</li>
-                            <li>Strategic consulting and audits</li>
-                        </ul>
-                    </article>
-                </div>
-                <div class="section-navigator">
-                    <a href="#consulting" class="section-link">
-                        <span>See the full category breakdown</span>
-                        <i data-lucide="arrow-down"></i>
-                    </a>
-                </div>
-            </div>
+    <section class="client-section" aria-labelledby="clients-title" id="industries">
+      <div class="shell">
+        <h2 class="eyebrow" id="clients-title">Trusted by organizations across industries</h2>
+        <div class="client-logos">
+          <img src="assets/images/clients/BigSteelBox-Logo.png" alt="BigSteelBox" loading="lazy" decoding="async">
+          <img src="assets/images/clients/rvt-logo-padding-o.png" alt="RVT.com" loading="lazy" decoding="async">
+          <img src="assets/images/clients/UBC_Sauder_Logo_2016.png" alt="UBC Sauder School of Business" loading="lazy" decoding="async">
+          <img src="assets/images/clients/crew-marketing-logo.png" alt="CREW Marketing" loading="lazy" decoding="async">
+          <img src="assets/images/clients/Stormboard-logo.png" alt="Stormboard" loading="lazy" decoding="async">
+          <img src="assets/images/clients/Interior-Savings-Logo.png" alt="Interior Savings" loading="lazy" decoding="async">
         </div>
+      </div>
     </section>
 
-    <section id="consulting" class="focus-area">
-        <div class="container">
-            <div class="section-header">
-                <span class="overline">Services</span>
-                <h2>Category-based service model</h2>
-                <p class="section-intro">Each category is designed to solve a specific type of problem, so scope and outcomes stay clear from the start.</p>
-            </div>
-
-            <div class="service-categories">
-                <article class="service-category animate-in">
-                    <div class="category-header">
-                        <span class="overline">Category 1</span>
-                        <h3>Hosting and operations</h3>
-                        <p>For teams that need dependable infrastructure, clear ownership, and less day-to-day technical firefighting.</p>
-                    </div>
-                    <div class="services-grid">
-                        <div class="service-card">
-                            <i data-lucide="cloud"></i>
-                            <h3>Managed cloud hosting</h3>
-                            <p>Managed hosting, patching, hardening, and uptime oversight for mission-critical sites.</p>
-                        </div>
-                        <div class="service-card">
-                            <i data-lucide="shield"></i>
-                            <h3>Maintenance and support</h3>
-                            <p>Security updates, plugin governance, performance tuning, and operational troubleshooting.</p>
-                        </div>
-                    </div>
-                </article>
-
-                <article class="service-category animate-in">
-                    <div class="category-header">
-                        <span class="overline">Category 2</span>
-                        <h3>Web and product delivery</h3>
-                        <p>For organizations actively shipping customer-facing experiences, campaigns, and product capabilities.</p>
-                    </div>
-                    <div class="services-grid">
-                        <div class="service-card">
-                            <i data-lucide="globe"></i>
-                            <h3>Web development</h3>
-                            <p>Static sites, content-managed sites, HubSpot implementations, and integration-ready front-end systems.</p>
-                        </div>
-                        <div class="service-card">
-                            <i data-lucide="layers"></i>
-                            <h3>SaaS products</h3>
-                            <p>Communication and website software for churches and mission-driven organizations.</p>
-                        </div>
-                        <div class="service-card">
-                            <i data-lucide="tool"></i>
-                            <h3>Applied R&amp;D</h3>
-                            <p>App development and data analytics experiments that validate opportunities before full rollout.</p>
-                        </div>
-                    </div>
-                </article>
-
-                <article class="service-category animate-in">
-                    <div class="category-header">
-                        <span class="overline">Category 3</span>
-                        <h3>Leadership and strategy</h3>
-                        <p>For leadership teams that need strong technical direction, prioritization, and execution accountability.</p>
-                    </div>
-                    <div class="services-grid">
-                        <div class="service-card">
-                            <i data-lucide="users"></i>
-                            <h3>Fractional tech management</h3>
-                            <p>Embedded leadership support for planning, team coordination, vendor alignment, and delivery rhythm.</p>
-                        </div>
-                        <div class="service-card">
-                            <i data-lucide="check-circle"></i>
-                            <h3>Strategic consulting</h3>
-                            <p>Website audits and public-facing digital strategy with prioritized recommendations your team can execute.</p>
-                        </div>
-                    </div>
-                </article>
-            </div>
-            
-            <div class="clients">
-                <h3>Trusted by</h3>
-                <div class="client-logos-container">
-                    <div class="client-logos-slider">
-                        <div class="client-logos-track">
-                            <div class="client-logo">
-                                <img src="assets/images/clients/BigSteelBox-Logo.png" alt="BigSteelBox">
-                            </div>
-                            <div class="client-logo">
-                                <img src="assets/images/clients/rvt-logo-padding-o.png" alt="RVT.com">
-                            </div>
-                            <div class="client-logo">
-                                <img src="assets/images/clients/UBC_Sauder_Logo_2016.png" alt="UBC">
-                            </div>
-                            <div class="client-logo">
-                                <img src="assets/images/clients/crew-marketing-logo.png" alt="CREW">
-                            </div>
-                            <div class="client-logo">
-                                <img src="assets/images/clients/Stormboard-logo.png" alt="Stormboard">
-                            </div>
-                            <div class="client-logo">
-                                <img src="assets/images/clients/Interior-Savings-Logo.png" alt="Interior Savings">
-                            </div>
-                            <!-- Duplicados para slider infinito -->
-                            <div class="client-logo">
-                                <img src="assets/images/clients/BigSteelBox-Logo.png" alt="BigSteelBox">
-                            </div>
-                            <div class="client-logo">
-                                <img src="assets/images/clients/rvt-logo-padding-o.png" alt="RVT.com">
-                            </div>
-                            <div class="client-logo">
-                                <img src="assets/images/clients/UBC_Sauder_Logo_2016.png" alt="UBC">
-                            </div>
-                            <div class="client-logo">
-                                <img src="assets/images/clients/crew-marketing-logo.png" alt="CREW">
-                            </div>
-                            <div class="client-logo">
-                                <img src="assets/images/clients/Stormboard-logo.png" alt="Stormboard">
-                            </div>
-                            <div class="client-logo">
-                                <img src="assets/images/clients/Interior-Savings-Logo.png" alt="Interior Savings">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="section-navigator">
-                <a href="#digital-innovation" class="section-link">
-                    <span>See product and R&amp;D work</span>
-                    <i data-lucide="arrow-down"></i>
-                </a>
-            </div>
+    <section class="section labs" id="labs" aria-labelledby="labs-title">
+      <span class="anchor" id="digital-innovation"></span><span class="anchor" id="philosophy"></span>
+      <div class="shell">
+        <div class="split labs-intro">
+          <div class="section-copy">
+            <p class="eyebrow"><span class="section-number">02 /</span> Products &amp; research</p>
+            <h2 id="labs-title">We build things of our own, too.</h2>
+            <p class="lead">Our internal research and development explores how software, automation and better tools can solve real problems. We turn promising ideas into products, guided by what we learn through hands-on technical work.</p>
+            <p class="lab-disciplines">Product development <span aria-hidden="true">/</span> Prototyping <span aria-hidden="true">/</span> Applied R&amp;D</p>
+          </div>
+          <figure class="photo labs-photo">
+            <img src="assets/images/stock/5.jpg" alt="A designer wearing headphones sketches ideas on paper" width="1248" height="1248" loading="lazy" decoding="async">
+          </figure>
         </div>
+        <article class="product-feature" aria-labelledby="wavesites-title">
+          <div class="product-copy">
+            <p class="eyebrow">Featured Hotbrain product</p>
+            <h3 id="wavesites-title"><img src="assets/images/wavesites/wordmark.png" width="912" height="160" alt="WaveSites" loading="lazy" decoding="async"></h3>
+            <p>Our website-building and business software platform helps businesses and organizations create, manage and grow their online presence with less complexity.</p>
+            <p class="availability">Currently available by invitation.</p>
+            <a class="text-link" href="https://wavesites.cloud/">Explore WaveSites <span aria-hidden="true">↗</span></a>
+          </div>
+          <div class="product-visual" aria-hidden="true">
+            <img src="assets/images/editorial/product.svg" width="600" height="420" alt="" loading="lazy" decoding="async">
+          </div>
+        </article>
+      </div>
     </section>
 
-    <section id="digital-innovation" class="full-width-image">
-        <div class="image-wrapper">
-            <img src="assets/images/stock/8.jpg" alt="Digital Innovation">
-            <div class="image-overlay">
-                <div class="container">
-                    <div class="overlay-content">
-                        <h2>Product work grounded in real client delivery</h2>
-                        <p>Because we run hosting, web development, and consulting engagements every week, our product and R&amp;D work stays practical.</p>
-                        <a href="#labs" class="section-link">
-                            <span>Explore SaaS and R&amp;D</span>
-                            <i data-lucide="arrow-down"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
+    <section class="section hosting" id="infrastructure" aria-labelledby="hosting-title">
+      <span class="anchor" id="digital-ecosystems"></span>
+      <div class="shell split">
+        <div class="section-copy">
+          <p class="eyebrow"><span class="section-number">03 /</span> Managed cloud hosting</p>
+          <h2 id="hosting-title">Infrastructure you don’t have to manage alone.</h2>
+          <p class="lead">We host and maintain websites and digital platforms, taking care of the technical work behind the scenes so your team can focus on its own work.</p>
+          <dl class="capabilities">
+            <div><dt>Hosting &amp; migrations</dt><dd>Managed cloud environments, onboarding and migration planning.</dd></div>
+            <div><dt>Security &amp; maintenance</dt><dd>Updates, hardening, plugin oversight and operational troubleshooting.</dd></div>
+            <div><dt>Performance &amp; support</dt><dd>Monitoring, caching, optimization and ongoing technical support.</dd></div>
+          </dl>
+          <a class="text-link" href="#contact">Talk about your hosting needs <span aria-hidden="true">↗</span></a>
         </div>
+        <figure class="hosting-figure">
+          <img src="assets/images/editorial/infrastructure.svg" width="640" height="560" alt="Stylized illustration of connected server racks" loading="lazy" decoding="async">
+        </figure>
+      </div>
     </section>
 
-    <section id="labs" class="focus-area dark">
-        <div class="container">
-            <div class="section-header">
-                <span class="overline">Product</span>
-                <h2>SaaS and R&amp;D</h2>
-                <p class="section-intro">We build our own products and test new ideas with clear business outcomes.</p>
-            </div>
-
-            <article class="wavesites-project" aria-labelledby="wavesites-title">
-                <div class="wavesites-project-content">
-                    <h3 id="wavesites-title">
-                        <img src="assets/images/wavesites/wordmark.png" width="912" height="160" alt="WaveSites" loading="lazy">
-                    </h3>
-                    <p>Our website-building and business software platform helps businesses and organizations create, manage and grow their online presence with less complexity.</p>
-                    <p class="wavesites-project-availability">Currently available by invitation.</p>
-                </div>
-                <a href="https://wavesites.cloud/" class="wavesites-project-link">
-                    <span>Explore WaveSites</span>
-                    <i data-lucide="arrow-up-right" aria-hidden="true"></i>
-                </a>
-            </article>
-
-            <div class="two-column">
-                <div class="column-content">
-                    <ul class="feature-list">
-                        <li>
-                            <i data-lucide="layers"></i>
-                            <div>
-                                <h3>SaaS product development</h3>
-                                <p>Communication and website platforms designed for churches and ministry teams.</p>
-                            </div>
-                        </li>
-                        <li>
-                            <i data-lucide="tool"></i>
-                            <div>
-                                <h3>App development R&amp;D</h3>
-                                <p>Rapid prototyping and validation for new product and automation opportunities.</p>
-                            </div>
-                        </li>
-                        <li>
-                            <i data-lucide="bar-chart"></i>
-                            <div>
-                                <h3>Data analytics</h3>
-                                <p>Measurement, reporting, and analysis that inform roadmap and operational decisions.</p>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-                <div class="column-image parallax-container">
-                    <div class="parallax-image">
-                        <img src="assets/images/stock/2.jpg" alt="Labs and R&D">
-                    </div>
-                </div>
-            </div>
-            
-            <div class="section-navigator">
-                <a href="#philosophy" class="section-link">
-                    <span>How we support operations</span>
-                    <i data-lucide="arrow-down"></i>
-                </a>
-            </div>
+    <section class="contact" id="contact" aria-labelledby="contact-title">
+      <span class="anchor" id="cta"></span>
+      <div class="shell contact-grid">
+        <div>
+          <p class="eyebrow">Start a conversation</p>
+          <h2 id="contact-title">What are you<br>working on?</h2>
+          <p>Tell us what you need to build, improve or maintain. We can work out the next practical step together.</p>
         </div>
+        <div class="contact-details">
+          <a class="button button-light" href="mailto:hello@hotbrain.co">Email us <span aria-hidden="true">↗</span></a>
+          <a class="email-address" href="mailto:hello@hotbrain.co">hello@hotbrain.co</a>
+          <p>Based in Kelowna, British Columbia, Canada.<br>Monday–Friday, 9 am–5 pm PT.</p>
+        </div>
+      </div>
     </section>
-
-    <section id="philosophy" class="quote-section">
-        <div class="container">
-            <div class="quote-container scroll-scale">
-                <div class="quote-icon">
-                    <i data-lucide="quote"></i>
-                </div>
-                <blockquote>
-                    <p>Clear strategy. Reliable delivery. No buzzword-heavy process.</p>
-                </blockquote>
-                <div class="section-navigator">
-                    <a href="#infrastructure" class="section-link light">
-                        <span>Hosting and operations</span>
-                        <i data-lucide="arrow-down"></i>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="infrastructure" class="infrastructure light">
-        <div class="container">
-            <div class="section-header">
-                <span class="overline">Hosting and operations</span>
-                <h2>Managed cloud hosting</h2>
-                <p class="section-intro">Managed hosting and ongoing technical care for business-critical sites.</p>
-            </div>
-            
-            <div class="two-column reversed">
-                <div class="column-content">
-                    <ul class="feature-list">
-                        <li>
-                            <i data-lucide="cloud"></i>
-                            <div>
-                                <h3>Managed cloud hosting</h3>
-                                <p>Stable hosting environments with routine platform updates and oversight.</p>
-                            </div>
-                        </li>
-                        <li>
-                            <i data-lucide="shield"></i>
-                            <div>
-                                <h3>Security and maintenance</h3>
-                                <p>Patch management, hardening, plugin oversight, and incident response support.</p>
-                            </div>
-                        </li>
-                        <li>
-                            <i data-lucide="globe"></i>
-                            <div>
-                                <h3>Performance and uptime</h3>
-                                <p>Monitoring, caching, and optimization to keep sites fast and available.</p>
-                            </div>
-                        </li>
-                        <li>
-                            <i data-lucide="users"></i>
-                            <div>
-                                <h3>Migrations and support</h3>
-                                <p>Onboarding, migration planning, and ongoing operational support for your team.</p>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-                <div class="column-image parallax-container">
-                    <div class="parallax-image">
-                        <img src="assets/images/stock/1.jpg" alt="Infrastructure">
-                    </div>
-                </div>
-            </div>
-            
-            <div class="section-navigator">
-                <a href="#digital-ecosystems" class="section-link">
-                    <span>Where this applies</span>
-                    <i data-lucide="arrow-down"></i>
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <section id="digital-ecosystems" class="full-width-image">
-        <div class="image-wrapper">
-            <img src="assets/images/stock/6.jpg" alt="Technology Landscape">
-            <div class="image-overlay dark-overlay">
-                <div class="container">
-                    <div class="overlay-content">
-                        <h2 class="gradient-text">Public-facing digital systems that work together</h2>
-                        <p>Website, hosting, integrations, analytics, and communication tools planned as one system, not disconnected projects.</p>
-                        <a href="#industries" class="section-link">
-                            <span>Industries and org types</span>
-                            <i data-lucide="arrow-down"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="industries" class="industries">
-        <div class="container">
-            <div class="section-header">
-                <span class="overline">Who we support</span>
-                <h2>Teams we commonly work with</h2>
-                <p class="section-intro">Cross-sector experience with organizations that depend on reliable public-facing digital platforms.</p>
-            </div>
-            
-            <div class="industry-grid">
-                <div class="industry-card">
-                    <i data-lucide="heart"></i>
-                    <h3>Nonprofits and associations</h3>
-                    <p>Sites and systems that support fundraising, communication, and member engagement.</p>
-                </div>
-                <div class="industry-card">
-                    <i data-lucide="landmark"></i>
-                    <h3>Financial and professional services</h3>
-                    <p>Reliable public-facing platforms with strong governance and content workflows.</p>
-                </div>
-                <div class="industry-card">
-                    <i data-lucide="book-open"></i>
-                    <h3>Education and training</h3>
-                    <p>Clear information architecture and dependable systems for students and staff.</p>
-                </div>
-                <div class="industry-card">
-                    <i data-lucide="store"></i>
-                    <h3>Churches and faith-based organizations</h3>
-                    <p>Communication and website tooling tailored to ministry-focused teams.</p>
-                </div>
-                <div class="industry-card">
-                    <i data-lucide="activity"></i>
-                    <h3>SaaS and technology teams</h3>
-                    <p>Execution support across product experiments, web delivery, and analytics.</p>
-                </div>
-                <div class="industry-card">
-                    <i data-lucide="server"></i>
-                    <h3>B2B and B2C operators</h3>
-                    <p>Scalable websites and operational systems that support growth.</p>
-                </div>
-            </div>
-            
-            <div class="section-navigator">
-                <a href="#cta" class="section-link">
-                    <span>Start a conversation</span>
-                    <i data-lucide="arrow-down"></i>
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <section id="cta" class="cta-banner">
-        <div class="cta-backdrop">
-            <img src="assets/images/stock/4.jpg" alt="Call to Action">
-        </div>
-        <div class="container">
-            <div class="cta-content">
-                <h2 class="text-reveal">Need a technical partner who can both advise and execute?</h2>
-                <p class="text-reveal-delay">Tell us what you are building or maintaining, and we will map out the next practical step.</p>
-                <a href="#contact" class="btn btn-primary btn-large glow-effect">Start a Conversation</a>
-            </div>
-        </div>
-    </section>
-
-    <section id="contact" class="contact">
-        <div class="container">
-            <div class="section-header light">
-                <span class="overline">Get in touch</span>
-                <h2>Contact Us</h2>
-                <p class="section-intro">Tell us what you need: hosting, development, product, or strategy.</p>
-            </div>
-            
-            <div class="two-column contact-layout">
-                <div class="contact-info">
-                    <div class="info-item">
-                        <i data-lucide="mail"></i>
-                        <div>
-                            <h3>Email</h3>
-                            <p>hello@hotbrain.co</p>
-                        </div>
-                    </div>
-                    <div class="info-item">
-                        <i data-lucide="map-pin"></i>
-                        <div>
-                            <h3>Location</h3>
-                            <p>Kelowna, BC, Canada</p>
-                        </div>
-                    </div>
-                    <div class="info-item">
-                        <i data-lucide="clock"></i>
-                        <div>
-                            <h3>Working Hours</h3>
-                            <p>Monday to Friday, 9am - 5pm PT</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="contact-form">
-                    <form>
-                        <div class="form-group">
-                            <label for="name">Name</label>
-                            <input type="text" id="name" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Email</label>
-                            <input type="email" id="email" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="message">Message</label>
-                            <textarea id="message" rows="5" required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Send Message</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-brand">
-                    <img src="assets/images/logo.png" alt="Hotbrain" class="footer-logo">
-                    <p>Managed cloud hosting, web development, SaaS, and technical strategy.</p>
-                </div>
-                <div class="footer-links">
-                    <div class="footer-nav">
-                        <h4>Navigation</h4>
-                        <ul>
-                            <li><a href="#vision">Approach</a></li>
-                            <li><a href="#consulting">Services</a></li>
-                            <li><a href="#labs">SaaS &amp; R&amp;D</a></li>
-                            <li><a href="#infrastructure">Hosting</a></li>
-                            <li><a href="#contact">Contact</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-legal">
-                        <h4>Legal</h4>
-                        <ul>
-                            <li><a href="terms-privacy.html">Terms of Service</a></li>
-                            <li><a href="terms-privacy.html">Privacy Policy</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-social">
-                        <h4>Connect</h4>
-                        <div class="social-links">
-                            <a href="https://www.linkedin.com/company/hotbrain/" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"></path>
-                                    <rect width="4" height="12" x="2" y="9"></rect>
-                                    <circle cx="4" cy="4" r="2"></circle>
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="copyright">
-                <p>© 2025 Hotbrain Digital Services Corp. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
-
-    <script src="script.js"></script>
+  </main>
+  <footer class="site-footer">
+    <div class="shell footer-inner">
+      <div>
+        <a class="brand" href="#top" aria-label="Hotbrain home"><img src="assets/images/logo.png" width="2000" height="461" alt="Hotbrain"></a>
+        <p>Hotbrain Digital Services Corp.</p>
+      </div>
+      <div class="footer-links">
+        <a href="https://www.linkedin.com/company/hotbrain/">LinkedIn <span aria-hidden="true">↗</span></a>
+        <a href="terms-privacy.html">Terms &amp; Privacy</a>
+        <a href="#top">Back to top ↑</a>
+      </div>
+    </div>
+    <div class="shell footer-bottom"><small>© 2026 Hotbrain Digital Services Corp.</small></div>
+  </footer>
 </body>
 </html>
