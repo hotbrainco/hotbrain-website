@@ -2,7 +2,7 @@
 
 | Asset | Provenance and use |
 | --- | --- |
-| `field.svg` | Original programmatically authored contour-line artwork for the Hotbrain homepage; not an external stock image. |
+| `workstation.svg` | Original isometric vector artwork of a laptop displaying a digital product and connected devices, matching the hosting illustration. Not an external stock image or an actual screenshot. |
 | `infrastructure.svg` | Original vector illustration of stylized server racks; illustrative, not a diagram of Hotbrain's actual hosting environment. |
 | `product.svg` | Original conceptual software interface artwork; not an actual screenshot of WaveSites. |
 | `favicon.svg` | Monochrome adaptation of Hotbrain's existing repository favicon (`../favicon.png`), with the original mark preserved. |
