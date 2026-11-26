@@ -908,6 +908,14 @@ nav {
     margin-bottom: var(--spacing-xs);
 }
 
+.feature-list .product-icon {
+    flex-shrink: 0;
+}
+
+.feature-list .section-link {
+    min-height: 44px;
+}
+
 .feature-list p {
     color: var(--gray-500);
     margin-bottom: 0;
@@ -1764,4 +1772,4 @@ footer ul li a:hover {
     .cta-buttons .btn {
         padding: 0.7rem 1.2rem;
     }
-} 
+}
