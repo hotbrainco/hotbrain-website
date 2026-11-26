@@ -33,8 +33,9 @@ a:hover { text-decoration-thickness: 2px; }
   pointer-events: none;
 }
 .site-header a:focus-visible { outline-color: var(--white); }
-.header-inner { display: flex; align-items: center; justify-content: space-between; gap: 32px; min-height: 108px; padding-block: 16px; }
+.header-inner { display: flex; align-items: center; justify-content: space-between; gap: 32px; min-height: 120px; padding-block: 20px; }
 .brand { display: inline-block; flex-shrink: 0; width: 170px; }
+.site-header .brand { width: 194px; }
 .site-header .brand img, .site-footer .brand img { filter: grayscale(1); }
 nav { display: flex; align-items: center; justify-content: flex-end; flex-wrap: wrap; gap: clamp(18px, 3vw, 42px); }
 nav a { font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; font-size: .9rem; font-weight: 500; letter-spacing: -.015em; line-height: 1.35; text-decoration: none; padding-block: 12px; white-space: nowrap; transition: color .16s ease; }
@@ -156,8 +157,8 @@ nav .nav-contact:hover, nav .nav-contact:focus-visible { color: #fff; border-col
 }
 @media (max-width: 760px) {
   .shell { width: calc(100% - 40px); }
-  .header-inner { flex-direction: column; align-items: flex-start; gap: 10px; padding-block: 19px 14px; }
-  .site-header .brand { width: 142px; }
+  .header-inner { flex-direction: column; align-items: flex-start; gap: 10px; padding-block: 22px 17px; }
+  .site-header .brand { width: 160px; }
   nav { justify-content: space-between; gap: 4px 12px; width: 100%; }
   nav a { font-size: .82rem; padding-block: 10px; }
   nav .nav-contact { gap: 7px; padding: 9px 11px; }
