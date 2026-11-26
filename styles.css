@@ -33,12 +33,12 @@ a:hover { text-decoration-thickness: 2px; }
   pointer-events: none;
 }
 .site-header a:focus-visible { outline-color: var(--white); }
-.header-inner { display: flex; align-items: center; justify-content: space-between; gap: 32px; min-height: 120px; padding-block: 20px; }
+.header-inner { display: flex; align-items: center; justify-content: space-between; gap: 32px; min-height: 136px; padding-block: 20px 36px; }
 .brand { display: inline-block; flex-shrink: 0; width: 170px; }
 .site-header .brand { width: 194px; }
 .site-header .brand img, .site-footer .brand img { filter: grayscale(1); }
 nav { display: flex; align-items: center; justify-content: flex-end; flex-wrap: wrap; gap: clamp(18px, 3vw, 42px); }
-nav a { font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; font-size: .9rem; font-weight: 500; letter-spacing: -.015em; line-height: 1.35; text-decoration: none; padding-block: 12px; white-space: nowrap; transition: color .16s ease; }
+nav a { font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; font-size: 1rem; font-weight: 500; letter-spacing: -.015em; line-height: 1.35; text-decoration: none; padding-block: 12px; white-space: nowrap; transition: color .16s ease; }
 nav a:hover { color: #b9b9b9; text-decoration: none; }
 nav .nav-contact { display: inline-flex; align-items: center; gap: 12px; border: 1px solid #777; padding: 11px 16px; transition: color .16s ease; }
 .contact-dot { display: inline-block; width: 8px; height: 8px; flex: 0 0 8px; border-radius: 50%; background: #3678db; transition: background-color .16s ease; }
@@ -157,10 +157,10 @@ nav .nav-contact:hover, nav .nav-contact:focus-visible { color: #fff; border-col
 }
 @media (max-width: 760px) {
   .shell { width: calc(100% - 40px); }
-  .header-inner { flex-direction: column; align-items: flex-start; gap: 10px; padding-block: 22px 17px; }
+  .header-inner { flex-direction: column; align-items: flex-start; gap: 10px; padding-block: 22px 29px; }
   .site-header .brand { width: 160px; }
   nav { justify-content: space-between; gap: 4px 12px; width: 100%; }
-  nav a { font-size: .82rem; padding-block: 10px; }
+  nav a { font-size: .9rem; padding-block: 10px; }
   nav .nav-contact { gap: 7px; padding: 9px 11px; }
   .contact-dot { width: 7px; height: 7px; flex-basis: 7px; }
   .hero-grid, .split, .product-feature, .contact-grid { grid-template-columns: minmax(0, 1fr); }
