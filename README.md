@@ -1,61 +1,29 @@
 # Hotbrain Website
 
-A clean, modern website for Hotbrain Digital Services Corp. featuring their technical strategy, infrastructure, and applied R&D services.
+The public website of Hotbrain Digital Services Corp. presents technology consulting, internal product development and R&D, and managed cloud hosting.
 
-## Features
+## Local development
 
-- Responsive design
-- Minimal and clean UI
-- Poppins font family
-- Lucide icons
-- Native HTML/CSS/JavaScript implementation
+No build step or JavaScript runtime is required. From the repository root, run:
 
-## Directory Structure
-
-```
-├── index.html              # Main homepage
-├── terms-privacy.html      # Terms and Privacy page
-├── styles.css              # Stylesheet
-├── script.js               # JavaScript functionality
-├── seed/                   # Source files folder
-│   ├── fixed/              # Contains logo and stock images
-│   ├── inspo/              # Inspiration images
-├── clients/                # Client logos
+```sh
+python -m http.server 8000
 ```
 
-## Running the Website
+Open http://localhost:8000/ and http://localhost:8000/terms-privacy.html. Both pages share `styles.css` and a dependency-free responsive layout.
 
-### Local Development
+## Design and assets
 
-1. Clone this repository
-2. Open the project folder in your code editor
-3. To view the website, open the `index.html` file in your web browser
-   - For Windows users, you can use PowerShell to start a simple HTTP server:
+- Monochrome editorial design using system fonts, grayscale photography and original SVG linework.
+- Homepage: `index.html`; legal page: `terms-privacy.html`; shared stylesheet: `styles.css`.
+- Asset provenance and illustration notes: [editorial asset notes](assets/images/editorial/README.md).
+- WaveSites branding: [product asset notes](assets/images/wavesites/README.md).
 
-```powershell
-# Using Python (if installed)
-python -m http.server
+The homepage uses an honest direct email link to hello@hotbrain.co; no message is submitted by the site itself. There is no simulated form submission.
 
-# Or with Node.js (if installed)
-npx http-server
-```
+## Review checklist
 
-4. The website should now be accessible at `http://localhost:8000` (or the port shown in your terminal)
-
-## Design Inspirations
-
-The website design is inspired by modern, minimal tech company websites with a focus on readability and clean presentation of information. The color scheme follows the brand guidelines with dark navy, bright orange accents, and white/black for text and backgrounds.
-
-## Browser Compatibility
-
-Tested and optimized for:
-- Chrome
-- Firefox
-- Safari
-- Edge
-
-## Credits
-
-- Fonts: [Poppins](https://fonts.google.com/specimen/Poppins) from Google Fonts
-- Icons: [Lucide](https://lucide.dev/)
-- Stock images: included in the `/seed/fixed/stock images` directory 
+- Review both pages at narrow (320–390px), tablet and desktop widths; verify no horizontal overflow, image framing, typography and navigation.
+- Verify local assets, section links (including legacy section IDs), legal page, WaveSites link, LinkedIn and email link.
+- Tab through the page, confirm visible focus and skip links, and verify the layout remains usable with JavaScript disabled.
+- Check contrast and logo readability. The existing stock images and brand assets remain in the repository even if not used in the redesigned homepage.
